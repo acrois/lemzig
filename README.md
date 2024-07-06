@@ -8,7 +8,7 @@ This repository will demonstrate how to set up a basic x86-64 kernel in Zig usin
 
 Any `make` command depends on GNU make (`gmake`) and is expected to be run using it. This usually means using `make` on most GNU/Linux distros, or `gmake` on other non-GNU systems.
 
-All `make all*` targets depend on Zig, at least version 0.11.x.
+All `make all*` targets depend on Zig, at least version 0.13.x.
 
 Additionally, building an ISO with `make all` requires `xorriso`, and building a HDD/USB image with `make all-hdd` requires `sgdisk` (usually from `gdisk` or `gptfdisk` packages) and `mtools`.
 
