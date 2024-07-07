@@ -11,6 +11,10 @@ pub export var framebuffer_request: limine.FramebufferRequest = .{};
 // See specification for further info.
 pub export var base_revision: limine.BaseRevision = .{ .revision = 2 };
 
+pub export var memmap_request: limine.MemoryMapRequest = .{};
+
+pub export var smp_request: limine.SmpRequest = .{};
+
 pub inline fn done() noreturn {
     while (true) {
         asm volatile ("hlt");
