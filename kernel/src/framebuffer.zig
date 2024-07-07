@@ -9,7 +9,7 @@ pub fn draw(framebuffer_response: *limine.FramebufferResponse) void {
 
     const framebuffer = framebuffer_response.framebuffers()[0];
 
-    for (0..100) |i| {
+    for (0..framebuffer.height) |i| {
         const pixel_offset = i * framebuffer.pitch + i * 4;
         @as(*u32, @ptrCast(@alignCast(framebuffer.address + pixel_offset))).* = 0xFFFFFFFF;
     }

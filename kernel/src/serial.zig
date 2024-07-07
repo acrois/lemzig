@@ -1,5 +1,12 @@
 // Serial port addresses
 pub const SERIAL_PORT_COM1 = 0x3F8;
+pub const SERIAL_PORT_COM2 = 0x2F8;
+pub const SERIAL_PORT_COM3 = 0x3E8;
+pub const SERIAL_PORT_COM4 = 0x2E8;
+pub const SERIAL_PORT_COM5 = 0x5F8;
+pub const SERIAL_PORT_COM6 = 0x4F8;
+pub const SERIAL_PORT_COM7 = 0x5E8;
+pub const SERIAL_PORT_COM8 = 0x4E8;
 
 inline fn outb(port: u16, value: u8) void {
     asm volatile ("outb %[value], %[port]"
